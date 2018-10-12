@@ -10,3 +10,5 @@ commands:
     description: Tells The User the Website.
   ghost:
     description: Sets a user to a ghost state.
+  fly:
+    description: Fly Toggle for User.

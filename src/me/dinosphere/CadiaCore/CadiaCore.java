@@ -42,14 +42,14 @@ public class CadiaCore extends JavaPlugin{
 	// Command Code
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		Player player = (Player) sender;
-		// Enable Boss Bar
+		// Discord Link
 		if(label.equalsIgnoreCase("discord")) {
 			player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY + "http://discord.io/cadia/");
 			
 			
 			
 		}
-		// Disable Boss Bar
+		// Website Link
 		if(label.equalsIgnoreCase("website")) {
 			
 			player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY + "http://cadianetwork.com/");
@@ -66,6 +66,27 @@ public class CadiaCore extends JavaPlugin{
 	            new TurnHuman(player.getName(), Boolean.valueOf(false)).runTaskLaterAsynchronously(Bukkit.getPluginManager().getPlugin("Ghost Player"), GhostPlayer.config.ghostTime.intValue());
 			 
 		    }
+
+		// Fly Command (Toggle)
+		if(label.equalsIgnoreCase("fly")) {
+			if (player.hasPermission("cadiacore.fly")){
+				if (player.isFlying() == true) {
+					player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY + "Fly for user " + player.getDisplayName() + " has been disabled.");
+					player.setAllowFlight(false);
+					player.setFlying(false);
+				
+				}else {
+					
+					player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY + "Fly for user " + player.getDisplayName() + " has been enabled.");
+					player.setAllowFlight(true);
+					player.setFlying(true);
+					
+				}	
+			}
+			
+			
+			
+		}
 		return false;
 			
 	}
