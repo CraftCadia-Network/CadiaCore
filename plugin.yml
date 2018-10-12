@@ -14,3 +14,5 @@ commands:
     description: Fly Toggle for User.
   kick:
     description: Kicks the player.
+  timeplayed:
+    description: Tells the player how long they have played.

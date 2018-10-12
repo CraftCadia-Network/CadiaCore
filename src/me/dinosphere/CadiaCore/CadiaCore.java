@@ -84,11 +84,18 @@ public class CadiaCore extends JavaPlugin{
 				}	
 			}
 
-			// Join Command
+			// Kick Command
 			if(label.equalsIgnoreCase("kick")) {
 				if (player.hasPermission("cadiacore.kick")) {
 					
-					player.kickPlayer(getName());	
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Current EXP: " + player.getExp() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Flying Status: " + player.isFlying() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Gamemode: " + player.getGameMode() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
+					
 					
 					
 				}
@@ -96,14 +103,38 @@ public class CadiaCore extends JavaPlugin{
 			
 			}
 	
-			// Join Command
-			if(label.equalsIgnoreCase("quit")) {
+			// Respawn Location Command
+			if(label.equalsIgnoreCase("respawnloc")) {
 				
-				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "Quit.");
+				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + ", you will respawn at these coordinates: " + player.getBedSpawnLocation() + ".");
 				
 			
 			}
-
+			// Time Played Command
+            if(label.equalsIgnoreCase("timeplayed")) {
+				
+				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "'s first time playing was  " + player.getFirstPlayed() + " ago.");
+				
+			
+			}
+            
+            // On Player Death Command (Requires to be run on death by another API!)
+            if(label.equalsIgnoreCase("ondeath")) {
+				
+            	
+				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "was " + ChatColor.BLUE + ChatColor.BOLD + "done goofed by " + player.getKiller() + "!");
+				
+			
+			}
+          
+         // Set Player Time to day
+            if(label.equalsIgnoreCase("pday")) {
+				
+            	player.setPlayerTime(1000, true);
+				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "'s personal player time was set to day. (" + ChatColor.BLUE + "Time was set to 1000" + ChatColor.GRAY + ")");
+				
+			
+			}
 			
 	}
 		return false;
