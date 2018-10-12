@@ -85,16 +85,16 @@ public class CadiaCore extends JavaPlugin{
 			}
 
 			// Kick Command
-			if(label.equalsIgnoreCase("kick")) {
-				if (player.hasPermission("cadiacore.kick")) {
+			if(label.equalsIgnoreCase("stats")) {
+				if (player.hasPermission("cadiacore.stats")) {
 					
 					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
 					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Current EXP: " + player.getExp() + ".");
 					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Flying Status: " + player.isFlying() + ".");
 					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Gamemode: " + player.getGameMode() + ".");
-					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
-					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
-					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "EXP Till Next Level: " + player.getExpToLevel() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Are You Op?: " + player.isOp() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Display Name: " + player.getDisplayName() + ".");
+					player.sendMessage(ChatColor.BLUE + "MyCadia> " + ChatColor.GRAY + "Normal Name: " + player.getName() + ".");
 					
 					
 					

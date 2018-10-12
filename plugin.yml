@@ -12,7 +12,7 @@ commands:
     description: Sets a user to a ghost state.
   fly:
     description: Fly Toggle for User.
-  kick:
-    description: Kicks the player.
+  stats:
+    description: Player Stats.
   timeplayed:
     description: Tells the player how long they have played.
