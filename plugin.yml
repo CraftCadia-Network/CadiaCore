@@ -1,0 +1,12 @@
+name: CadiaCore
+main: me.dinosphere.CadiaCore.CadiaCore
+version: 1.1
+description: >
+             Core Plugin developed by Developers at Cadia Network.
+commands:
+  discord:
+    description: Tells The User the Discord.
+  website:
+    description: Tells The User the Website.
+  ghost:
+    description: Sets a user to a ghost state.
