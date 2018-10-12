@@ -12,3 +12,5 @@ commands:
     description: Sets a user to a ghost state.
   fly:
     description: Fly Toggle for User.
+  kick:
+    description: Kicks the player.

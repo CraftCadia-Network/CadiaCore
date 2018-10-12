@@ -83,12 +83,29 @@ public class CadiaCore extends JavaPlugin{
 					
 				}	
 			}
+
+			// Join Command
+			if(label.equalsIgnoreCase("kick")) {
+				if (player.hasPermission("cadiacore.kick")) {
+					
+					player.kickPlayer(getName());	
+					
+					
+				}
+
 			
+			}
+	
+			// Join Command
+			if(label.equalsIgnoreCase("quit")) {
+				
+				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "Quit.");
+				
 			
-			
-		}
-		return false;
+			}
+
 			
 	}
+		return false;
 	
-}
+}}
