@@ -6,8 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Sam Taber/eclipse-workspace/CadiaCore/Build Path/BarAPI.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sam Taber/eclipse-workspace/CadiaCore/Build Path/Ghost_Player.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sam Taber/eclipse-workspace/CadiaCore/Build Path/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+	<classpathentry kind="lib" path="Build Path/BarAPI.jar"/>
+	<classpathentry kind="lib" path="Build Path/Ghost_Player.jar"/>
+	<classpathentry kind="lib" path="Build Path/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

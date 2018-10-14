@@ -103,40 +103,56 @@ public class CadiaCore extends JavaPlugin{
 			
 			}
 	
-			// Respawn Location Command
-			if(label.equalsIgnoreCase("respawnloc")) {
-				
-				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + ", you will respawn at these coordinates: " + player.getBedSpawnLocation() + ".");
-				
 			
-			}
-			// Time Played Command
-            if(label.equalsIgnoreCase("timeplayed")) {
-				
-				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "'s first time playing was  " + player.getFirstPlayed() + " ago.");
-				
-			
-			}
-            
-            // On Player Death Command (Requires to be run on death by another API!)
-            if(label.equalsIgnoreCase("ondeath")) {
-				
-            	
-				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "was " + ChatColor.BLUE + ChatColor.BOLD + "done goofed by " + player.getKiller() + "!");
-				
-			
-			}
-          
-         // Set Player Time to day
-            if(label.equalsIgnoreCase("pday")) {
-				
-            	player.setPlayerTime(1000, true);
-				player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "'s personal player time was set to day. (" + ChatColor.BLUE + "Time was set to 1000" + ChatColor.GRAY + ")");
-				
-			
-			}
 			
 	}
+		
+		// Respawn Location Command
+					if(label.equalsIgnoreCase("respawnloc")) {
+						
+						player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + ", you will respawn at these coordinates: " + player.getBedSpawnLocation() + ".");
+						
+					
+					}
+					// Time Played Command
+		            if(label.equalsIgnoreCase("timeplayed")) {
+						
+						player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "'s first time playing was  " + player.getFirstPlayed() + " ago.");
+						
+					
+					}
+		            
+		            // On Player Death Command (Requires to be run on death by another API!)
+		            if(label.equalsIgnoreCase("ondeath")) {
+						
+		            	
+						player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "was " + ChatColor.BLUE + ChatColor.BOLD + "done goofed by " + player.getKiller() + "!");
+						
+					
+					}
+		          
+		         // Set Player Time to day
+		            if(label.equalsIgnoreCase("pday")) {
+						
+		            	player.setPlayerTime(1000, true);
+						player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.GRAY  + player.getDisplayName() + "'s personal player time was set to day. (" + ChatColor.BLUE + "Time was set to 1000" + ChatColor.GRAY + ")");
+						
+					
+					}
+		            
+			         // Current Potions
+		            if(label.equalsIgnoreCase("potioneffect")) {
+		            	
+						player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.DARK_GREEN  + "your status effect is " + player.getActivePotionEffects());
+		
+		            }
+		            
+			         // Current Potions
+		            if(label.equalsIgnoreCase("potioneffect")) {
+		            	
+						player.sendMessage(ChatColor.BLUE + "CadiaCore> " + ChatColor.DARK_GREEN  + "your status effect is " + player.getActivePotionEffects());
+		
+		            }
 		return false;
 	
 }}
